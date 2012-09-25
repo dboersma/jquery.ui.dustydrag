@@ -6,28 +6,24 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>dustyDrag.js | a responsive lightweight swipeable slider</title>
-  <meta name="description" content="dustyDrag.js is a lightweight swipeable slider that should work with all browsers and mobile devices.">
+  <title>dustyDrag.js | a responsive jQuery UI draggable control</title>
+  <meta name="description" content="dustyDrag.js is a lightweight cross-browser compatible jQuery UI draggable control">
 
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/dustyDrag.css">
 
   <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-  <header>
-
-  </header>
   <div role="main">
     <div class='mainContainer'>
-      <h1>dustyDrag.js, it's uber awesome!</h1>
+      <header>
+        <h1>dustyDrag.js</h1>
+      </header>
       <div class='slider'></div>
       <button class='resetSlider' disabled='disabled'>Reset</button>
-      <div class='sidenote'>
-        <span>*Known bug: Releasing the mouse after sliding over a disabled input fails to release the slider (jQuery does not fire a "mouseup" event over disabled inputs).  =(</span>
-      </div>
+      <span class='note'>dustyDrag.js is a touch-capable lightweight responsive slider that works with all major browsers.</span>
     </div>
   </div>
   <footer>
@@ -36,12 +32,11 @@
 
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
   
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
-	<script>jQuery.ui || document.write('<script src="js/libs/jquery-ui-1.8.17.custom.min.js"><\/script>')</script>
+	<script>jQuery.ui || document.write('<script src="js/jquery-ui-1.8.17.custom.min.js"><\/script>')</script>
   
-  <script src="js/TouchPunch.js"></script>
   <script src="js/dustyDrag.js"></script>
   <script>
   $(document).ready(function(){
