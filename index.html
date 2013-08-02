@@ -12,7 +12,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/style.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
 </head>
 <body>
   <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
@@ -31,19 +31,21 @@
   </footer>
 
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.7.1.min.js"><\/script>')</script>
-
-  <script src="js/jquery.touchSwipe.min.js"></script>
-  <script src="js/jquery.dustyDrag.js"></script>
+  
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js"></script>
+	<script>jQuery.ui || document.write('<script src="js/jquery-ui-1.8.17.custom.min.js"><\/script>')</script>
+  
+  <script src="js/dustyDrag.js"></script>
   <script>
   $(document).ready(function(){
     $('.slider').dustyDrag({
-      callback: function(){
+      onComplete: function(){
         $('.resetSlider').removeAttr('disabled');
       }
     });
-
+    
     $('.resetSlider').on('click', function(){
       $('.slider').trigger('reset');
       $('.resetSlider').attr('disabled', 'disabled');
